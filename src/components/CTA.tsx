@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const CTA = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-24 bg-gradient-hero relative overflow-hidden">
       {/* Background Elements */}
@@ -32,6 +34,7 @@ const CTA = () => {
               variant="secondary" 
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 shadow-glow group"
+              onClick={() => navigate("/upload")}
             >
               Start Free Trial - No Credit Card Required
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
