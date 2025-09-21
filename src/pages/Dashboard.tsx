@@ -7,6 +7,8 @@ import { Calendar, AlertTriangle, Shield, FileText, Clock, DollarSign, Users, Ar
 import Header from "@/components/Header";
 import DocumentViewer from "@/components/DocumentViewer";
 import CalendarIntegration from "@/components/CalendarIntegration";
+import ComplianceActions from "@/components/ComplianceActions";
+import EvidenceLocker from "@/components/EvidenceLocker";
 
 interface DocumentInfo {
   name: string;
@@ -306,6 +308,12 @@ const Dashboard = () => {
 
               {/* Calendar Integration */}
               <CalendarIntegration events={analysisData.timeline} />
+
+              {/* Compliance Actions */}
+              <ComplianceActions />
+
+              {/* Evidence Locker */}
+              <EvidenceLocker />
 
               {/* Parties */}
               <Card className="shadow-elegant">

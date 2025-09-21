@@ -17,6 +17,12 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
+            <button 
+              onClick={() => navigate("/documents")}
+              className="text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              Documents
+            </button>
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-smooth">
               Features
             </a>
